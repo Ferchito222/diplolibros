@@ -31,7 +31,7 @@ $(document).ready(function () {
                                  <button class="borrar_nombre btn btn-danger" ><i class="fas fa-trash"></i></button>`
             }
         ],
-        "language": espp
+        "language": esp67
     });
     // console.log(datatable);
     function rellenar_Autor() {
@@ -182,7 +182,7 @@ $(document).ready(function () {
 
 });
 
-let espp = {
+let esp67 = {
     "processing": "Procesando...",
     "lengthMenu": "Mostrar _MENU_ registros",
     "zeroRecords": "No se encontraron resultados",
