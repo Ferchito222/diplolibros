@@ -185,8 +185,8 @@ $(document).ready(function () {
     function Procesar_envio() {
         let nombre = '', nom, nom2;
 
-        // nom = document.getElementById('nombre').value;
-        // cliente = document.getElementById('nombre22').value;
+        nom = document.getElementById('nombre').value;
+        cliente = document.getElementById('nombre22').value;
         let cliente = $('#nombre22').val();
         console.log(cliente);
         if (RecuperarLS().length == 0) {

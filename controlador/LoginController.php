@@ -31,7 +31,6 @@ if (!empty($_SESSION['us_tipo'])) {
 					break;
     }
 } else {
-    // $usuario->logearse($user, $pass);
     if (!empty($usuario->logearse($user, $pass))=="logueado") {
         $usuario->obtener_dato_loguado($user);
         foreach ($usuario->objetos as $objeto) {

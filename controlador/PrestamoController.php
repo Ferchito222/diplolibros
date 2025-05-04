@@ -5,7 +5,7 @@
 
     if ($_POST['funcion']=='registrar_envio') {
         $nombre=$_POST['nombre'];      
-        // $prestamo=json_decode($_POST['json']);
+        $prestamo=json_decode($_POST['json']);
         $id_libpres=$_POST['id_librops']; 
         date_default_timezone_set('America/La_Paz');
         $fechaprestamo=date('Y-m-d');
@@ -32,10 +32,9 @@
         $prestamo->devolverlote($id_libpres);
         $prestamo->borrar($id);
     }     
-    // if ($_POST['funcion2'] == 'devolver') {
+    if ($_POST['funcion2'] == 'devolver') {
 
-    //     $$id_libpres= $_POST['id_lib'];
-    //     $prestamo->devolverlote($id_libpres);
-        
-    // }        
+        $$id_libpres= $_POST['id_lib'];
+        $prestamo->devolverlote($id_libpres);        
+    }        
 ?>

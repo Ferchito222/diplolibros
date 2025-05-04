@@ -33,7 +33,7 @@ $(document).ready(function () {
         ],
         "language": esp67
     });
-    // console.log(datatable);
+    console.log(datatable);
     function rellenar_Autor() {
         funcion = "rellenar_autores";
         $.post('../controlador/AutorController.php', { funcion }, (response) => {
@@ -54,7 +54,7 @@ $(document).ready(function () {
         let autores = $('#autores').val();
         let lote = $('#lote').val();
         let des = $('#des').val();
-        // console.log(id,titulo,autores,lote,des);
+        console.log(id,titulo,autores,lote,des);
         if (edit == false) {
             funcion = 'crear';
         } else {
